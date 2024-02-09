@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Häckplanta</title>
+
+   <style>
+	body {
+    		background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+	}
+
+    </style>
+</head>
+
+
+<body>
+
+	<section>
+
+		<!-- Lägg till den svarta rutan med id "blackOverlay" -->
+		<div id="SvartRektangel">
+			<p class="sökMenyText">SÖK</p>
+			<p class="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			       <nav class="submenu" id="submenu2">
+					<ul>
+						<li><a href="#">ÖPPETTIDER</a></li>
+						<li><a href="OmOss.html">OM OSS</a></li>
+						<li><a href="HittaHit.html">HITTA HIT</a></li>
+						<li><a href="#">KAFE</a></li>
+						<li><a href="Sortiment.html">SORTIMENT</a></li>
+						<li><a href="#">TJÄNSTER</a></li>
+						<li><a href="#">PRESENTKORT</a></li>
+				    	</ul>
+			       </nav>
+		       
+
+			       <!-- Lägg till den svarta rutan med id "blackOverlay" -->
+			       <div id="grönaRutanHem">
+				       <a href="index.html">
+					       <p id="hemText">HEM</p>
+				       </a>
+			</div>
+		       </div>  
+	</section>
+
+	<div id="grönRuta">
+		<p id="rubrik">HÄCKPLANTA</p>
+		<p id="text">Beställningsvara som levereras som barrot (utan jord och kruka) i knippe om 10 st. Sätts i vatten upp till ett dygn innan plantering. Säljs under vår (beställ senast 15 maj) samt höst (beställ senast i augusti). Leverans under höst sker när plantorna börjat avmogna (vanligen slutet av september). Plantering kan ske så länge inte marken är frusen. Alla plantor är förgrenade och har angiven höjd vid leverans. Vid vårplantering bör man göra planteringsbeskärning direkt, vid höstplantering görs den våren efter. Vi reserverar oss för slutförsäljning hos leverantör.</div>
+
+	
+
+</body>
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+    </script>
+    
+</html>
