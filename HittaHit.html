@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="stilmall.css" type="text/css">
     <title>HITTA HIT</title>
 
-</head>
-
-<style>
+    <style>
 	
 
 	h3{
@@ -36,10 +34,13 @@
 
 	}
 
-</style>
+	</style>
+
+</head>
 
 <body>
 	<section>
+		<h1>MENY</h1>
 		<div id="SvartRektangel">
 			<p class="sökMenyText">SÖK</p>
 			<p class="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
@@ -84,18 +85,18 @@
 		<p id="TextBil"> Från Umeå, kör Blå Vägen (Holmsundsvägen) mot Holmsund. Efter ca 6 km, sväng av vänster vid skylten Yttertavle 4. Efter byaskylten Holmsjön så ligger Smultronstället på vänster sida.</p>
 		<p id="TextCykel">Från Umeå, ta gärna den fina och krokiga vägen via Yttertavle! Smultronstället ligger precis efter sjön.</p>
 	</section>
-</body>
 
-    <script>
-	function toggleSubMenu(submenuId) {
-	    var submenu = document.getElementById(submenuId);
-	    if (submenu.style.display === "none") {
-		submenu.style.display = "flex";
-	    } else {
-		submenu.style.display = "none";
-	    }
-	}
-    </script>
-    
+	<script>
+		function toggleSubMenu(submenuId) {
+		    var submenu = document.getElementById(submenuId);
+		    if (submenu.style.display === "none") {
+			submenu.style.display = "flex";
+		    } else {
+			submenu.style.display = "none";
+		    }
+		}
+	</script>
+</body>
+  
 </html>
 
